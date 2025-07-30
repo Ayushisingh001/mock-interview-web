@@ -11,56 +11,53 @@ export const HomePage = () => {
   return (
     <div className="flex-col w-full pb-24">
       <Container>
-        <div className="my-8">
-          <h2 className="text-3xl text-center md:text-left md:text-6xl">
-            <span className=" text-outline font-extrabold md:text-8xl">
-              Next-Gen Interview Practice
-            </span>
-            <br />
-            <span className="text-gray-500 font-extrabold">
-              -   A better way to
-            </span>
-            <br />
-            Get smarter, faster, and more confident 
-           
-          </h2>
+         <div className="my-12 flex flex-col md:flex-row items-center justify-between gap-10">
+    <div className="flex-1 text-center md:text-left space-y-4">
+      <h1 className="text-4xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+        Crack Interviews with AI Precision
+      </h1>
+      <p className="text-slate-400 text-sm md:text-base max-w-lg mx-auto md:mx-0">
+        Master every round before it begins. Practice smart. Learn faster. Win confidently.
+      </p>
+      <Link to="/generate">
+        <Button className="mt-4 px-6 py-3 text-lg">
+          Start Practicing <Sparkles className="ml-2" />
+        </Button>
+      </Link>
+    </div>
 
-          <p className="mt-4 text-muted-foreground text-sm">
-            Boost your interview skills and increase your success rate with
-            AI-driven insights. Discover a smarter way to prepare, practice, and
-            stand out.
-          </p>
-        </div>
-
-       
-
-        {/* image sectiomn */}
-
-        <div className="w-full mt-4 rounded-xl bg-gray-100 h-[420px] drop-shadow-md overflow-hidden relative">
-          <img
-            src="assets/img/reos.jpeg"
-            alt=""
-            className="w-full h-full object-cover"
-          />
-
-          <div className="absolute top-4 left-4 px-4 py-2 rounded-md bg-white/40 backdrop-blur-md">
-            Inteviews Copilot&copy;
-          </div>
-
-          <div className="hidden md:block absolute w-80 bottom-4 right-4 px-4 py-2 rounded-md bg-white/60 backdrop-blur-md">
-            <h2 className="text-neutral-800 font-semibold">Developer</h2>
-            <p className="text-sm text-neutral-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              distinctio natus, quos voluptatibus magni sapiente.
-            </p>
-
-            <Button className="mt-3">
-              Generate <Sparkles />
-            </Button>
-          </div>
-        </div>
+    <div className="flex-1">
+      <img
+        src="assets/img/final.jpeg"
+        alt="AI Interview Visual"
+        className="rounded-xl object-cover w-full h-full max-h-[400px] shadow-lg shadow-purple-500/20"
+      />
+    </div>
+  </div>
       </Container>
 
+<Container className="py-12">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="bg-slate-800 p-6 rounded-lg shadow-inner border border-slate-700 text-center">
+      <h3 className="font-semibold text-xl text-blue-400">Real-Time Feedback</h3>
+      <p className="text-sm text-slate-400 mt-2">
+        Instant suggestions to improve after every mock session.
+      </p>
+    </div>
+    <div className="bg-slate-800 p-6 rounded-lg shadow-inner border border-slate-700 text-center">
+      <h3 className="font-semibold text-xl text-purple-400">Custom Questions</h3>
+      <p className="text-sm text-slate-400 mt-2">
+        Practice by role, company, or topic with dynamic question sets.
+      </p>
+    </div>
+    <div className="bg-slate-800 p-6 rounded-lg shadow-inner border border-slate-700 text-center">
+      <h3 className="font-semibold text-xl text-pink-400">Track Your Growth</h3>
+      <p className="text-sm text-slate-400 mt-2">
+        Weekly insights and progress charts to keep you sharp.
+      </p>
+    </div>
+  </div>
+</Container>
       {/* marquee section */}
 
       <div className="w-full my-12">
@@ -85,7 +82,7 @@ export const HomePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
           <div className="col-span-1 md:col-span-3">
             <img
-              src="assets/img/int.jpeg"
+              src="assets/img/download.jpeg"
               alt=""
               className="w-full max-h-96 rounded-md object-cover"
             />
