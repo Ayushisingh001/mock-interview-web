@@ -13,9 +13,9 @@ Built with React, TypeScript, and Vite for a fast, modern, and scalable experien
 
 🛠️ Tech Stack
 Category	Tools
-Frontend Framework:React (with TypeScript)
-Build Tool:Vite
-Styling:Tailwind CSS , Styled Components
-State Management:Zustand / Redux Toolkit
-Linting & Formatting:ESLint + Prettier
- AI & Backend :	Gemini API , Firebase 
+-Frontend Framework:React (with TypeScript)
+-Build Tool:Vite
+-Styling:Tailwind CSS , Styled Components
+-State Management:Zustand / Redux Toolkit
+-Linting & Formatting:ESLint + Prettier
+-AI & Backend :	Gemini API , Firebase 
